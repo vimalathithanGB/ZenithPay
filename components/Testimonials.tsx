@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const Star: React.FC<{ filled: boolean }> = ({ filled }) => (
@@ -29,24 +28,24 @@ const Rating: React.FC<{ score: number }> = ({ score }) => (
 const Testimonials: React.FC = () => {
   const testimonials = [
     {
-      name: 'Sarah J.',
-      role: 'Freelance Designer',
-      quote: 'ZenithPay has completely changed how I handle my finances. It\'s incredibly fast, and I feel so much more secure than with my old banking app. Sending invoices and getting paid is now a breeze!',
-      avatar: 'https://picsum.photos/seed/person1/100/100',
+      name: 'Jessica M.',
+      role: 'Cruiser Enthusiast',
+      quote: 'Found my dream bike in less than a week! The platform is intuitive and connects you with reputable sellers. The whole process was smoother than a fresh oil change.',
+      avatar: 'https://picsum.photos/seed/biker1/100/100',
       rating: 5,
     },
     {
-      name: 'Mike R.',
-      role: 'Small Business Owner',
-      quote: 'The ability to make instant international payments has been a game-changer for my business. Low fees, great exchange rates, and top-notch security. I highly recommend it to any entrepreneur.',
-      avatar: 'https://picsum.photos/seed/person2/100/100',
+      name: 'David L.',
+      role: 'Weekend Warrior',
+      quote: 'Selling my old sport bike on MotoHub was a breeze. I got a fair price and the buyer was local. I highly recommend it for anyone looking to sell their motorcycle.',
+      avatar: 'https://picsum.photos/seed/biker2/100/100',
       rating: 5,
     },
     {
-      name: 'Alex Chen',
-      role: 'Student',
-      quote: 'Splitting bills with my roommates used to be a headache. With ZenithPay, it takes two seconds. The interface is so clean and easy to use. Honestly, I don\'t know how I managed without it.',
-      avatar: 'https://picsum.photos/seed/person3/100/100',
+      name: 'Ryan K.',
+      role: 'First-Time Buyer',
+      quote: 'As a new rider, the detailed listings and seller reviews were a lifesaver. I felt confident in my purchase and couldn\'t be happier with my first bike. Thanks, MotoHub!',
+      avatar: 'https://picsum.photos/seed/biker3/100/100',
       rating: 5,
     },
   ];
@@ -55,9 +54,9 @@ const Testimonials: React.FC = () => {
     <section id="testimonials" className="py-20">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-white">Loved by Users Worldwide</h2>
+          <h2 className="text-3xl md:text-4xl font-extrabold text-white">Hear From Our Riders</h2>
           <p className="mt-4 text-lg text-slate-400">
-            Don't just take our word for it. Here's what some of our happy customers have to say about their ZenithPay experience.
+            Don't just take our word for it. Here's what our community members have to say about their MotoHub experience.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -68,7 +67,7 @@ const Testimonials: React.FC = () => {
                 <p className="text-slate-300 mt-4 italic">"{testimonial.quote}"</p>
               </div>
               <div className="flex items-center mt-6">
-                <img src={testimonial.avatar} alt={testimonial.name} className="w-12 h-12 rounded-full mr-4" />
+                <img src={testimonial.avatar} alt={testimonial.name} className="w-12 h-12 rounded-full mr-4 object-cover" />
                 <div>
                   <p className="font-bold text-white">{testimonial.name}</p>
                   <p className="text-sm text-slate-400">{testimonial.role}</p>

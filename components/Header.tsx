@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { LogoIcon } from '../constants/icons';
 
@@ -22,7 +21,7 @@ const Header: React.FC = () => {
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         <div className="flex items-center space-x-2">
           <LogoIcon className="w-8 h-8 text-indigo-400" />
-          <span className="text-2xl font-bold text-white">ZenithPay</span>
+          <span className="text-2xl font-bold text-white">MotoHub</span>
         </div>
         <nav className="hidden md:flex items-center space-x-8">
           <a href="#features" className="text-slate-300 hover:text-white transition-colors">

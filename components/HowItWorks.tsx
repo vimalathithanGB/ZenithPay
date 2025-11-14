@@ -1,26 +1,25 @@
-
 import React from 'react';
-import { LinkIcon, ViewfinderCircleIcon, CheckBadgeIcon } from '../constants/icons';
+import { MagnifyingGlassIcon, ChatBubbleLeftRightIcon, CheckBadgeIcon } from '../constants/icons';
 
 const HowItWorks: React.FC = () => {
   const steps = [
     {
       number: '01',
-      icon: <LinkIcon className="w-10 h-10 text-indigo-400" />,
-      title: 'Create Your Account',
-      description: 'Download the app and sign up in minutes. Securely link your bank accounts or cards.',
+      icon: <MagnifyingGlassIcon className="w-10 h-10 text-indigo-400" />,
+      title: 'Search & Discover',
+      description: 'Use our powerful search to browse thousands of listings and find the bike that\'s right for you.',
     },
     {
       number: '02',
-      icon: <ViewfinderCircleIcon className="w-10 h-10 text-cyan-400" />,
-      title: 'Tap to Pay',
-      description: 'Use your phone for contactless payments in-store or send money to friends with just a tap.',
+      icon: <ChatBubbleLeftRightIcon className="w-10 h-10 text-cyan-400" />,
+      title: 'Connect with Sellers',
+      description: 'Ask questions, schedule a test ride, and negotiate directly with verified sellers on our platform.',
     },
     {
       number: '03',
       icon: <CheckBadgeIcon className="w-10 h-10 text-emerald-400" />,
-      title: 'Get Instant Confirmation',
-      description: 'Both you and the recipient get an immediate notification. Your transaction is secure and verified.',
+      title: 'Ride Away Happy',
+      description: 'Finalize your purchase with confidence. Welcome to the community and enjoy your new ride!',
     },
   ];
 
@@ -28,9 +27,9 @@ const HowItWorks: React.FC = () => {
     <section id="how-it-works" className="py-20 bg-slate-900/70">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-white">Get Started in 3 Easy Steps</h2>
+          <h2 className="text-3xl md:text-4xl font-extrabold text-white">Find Your Ride in 3 Easy Steps</h2>
           <p className="mt-4 text-lg text-slate-400">
-            Making payments has never been this simple. We've designed a seamless experience from start to finish.
+            We've designed a seamless experience for you to discover, connect, and purchase your next motorcycle.
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-4">
